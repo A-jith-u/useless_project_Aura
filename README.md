@@ -46,7 +46,7 @@ For Software:
 ### Implementation
   Installation
   Clone the repo:
-  https://github.com/Ganngaa/uselessproject
+  https://github.com/A-jith-u/useless_project_Aura
 
 
 # Run
