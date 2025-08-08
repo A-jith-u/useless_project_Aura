@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraCheck - Aura Calculator & Celebrities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Red+Hat+Display:wght@500;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container animate__animated animate__fadeIn">
+        <header>
+            <h1>AuraCheck</h1>
+            <p class="subtitle">Your complete aura analysis toolkit</p>
+        </header>
+
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="showPage('calculator')">Aura Calculator</button>
+            <button class="nav-btn" onclick="showPage('celebrities')">Aura Celebrities</button>
+        </div>
+
+        <!-- Calculator Page -->
+        <div id="calculator" class="page-content active">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="showTab('daily')">Daily Checklist</button>
+                <button class="tab-btn" onclick="showTab('classic')">Core Energy</button>
+                <button class="tab-btn" onclick="showTab('mood')">Mood Scan</button>
+                <button class="tab-btn" onclick="showTab('history')">History</button>
+                <button class="tab-btn" onclick="showTab('experience')">Day Experience</button>
+            </div>
+
+            <!-- Daily Checklist Tab -->
+            <div id="daily" class="tab-content active">
+                <div class="method-card">
+                    <h3 class="method-title"><i class="fas fa-check-circle"></i> Daily Aura Checklist</h3>
+                    <p>Track your daily activities to calculate your current aura score</p>
+                    
+                    <div class="aura-checklist">
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="100">
+                            <span>Helped someone in need</span>
+                            <span class="aura-points positive-points">+100</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="80">
+                            <span>Meditated or practiced mindfulness</span>
+                            <span class="aura-points positive-points">+80</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="50">
+                            <span>Gave a genuine compliment</span>
+                            <span class="aura-points positive-points">+50</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="-70">
+                            <span>Argued or lost temper</span>
+                            <span class="aura-points negative-points">-70</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="60">
+                            <span>Exercised or moved your body</span>
+                            <span class="aura-points positive-points">+60</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="-40">
+                            <span>Ate junk food excessively</span>
+                            <span class="aura-points negative-points">-40</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="70">
+                            <span>Spent time in nature</span>
+                            <span class="aura-points positive-points">+70</span>
+                        </label>
+                        
+                        <label class="aura-item">
+                            <input type="checkbox" data-points="-50">
+                            <span>Ignored someone's feelings</span>
+                            <span class="aura-points negative-points">-50</span>
+                        </label>
+                    </div>
+                    
+                    <div class="total-score">
+                        <div>Your Current Aura Score</div>
+                        <div class="total-score-value" id="aura-score">0</div>
+                    </div>
+                    
+                    <div class="other-experience">
+                        <h4>Other Experience</h4>
+                        <textarea placeholder="Describe your experience..."></textarea>
+                        <button class="add-experience-btn" onclick="addCustomExperience()">
+                            <i class="fas fa-plus"></i> Add Custom Experience
+                        </button>
+                    </div>
+                    
+                    <button class="btn" onclick="calculateAuraFromChecklist()">
+                        <i class="fas fa-calculator"></i> Calculate My Aura
+                    </button>
+                </div>
+            </div>
+
+            <!-- Classic Tab - Core Energy Test -->
+            <div id="classic" class="tab-content">
+                <div class="method-card">
+                    <h3 class="method-title"><i class="fas fa-atom"></i> Core Energy Test</h3>
+                    <p>Discover your fundamental energy signature</p>
+                    
+                    <label>How intense is your energy today?</label>
+                    <input type="range" min="1" max="100" value="50" class="emoji-slider" id="energy-intensity">
+                    <div class="slider-labels">
+                        <span>🌊 Subtle Waves</span>
+                        <span>⚡ Lightning Storm</span>
+                    </div>
+                    
+                    <label>What color resonates with you right now?</label>
+                    <div class="vibe-selector">
+                        <div class="vibe-option" onclick="selectColor('purple')">
+                            <div class="vibe-emoji">🟣</div>
+                            <div class="vibe-label">Purple</div>
+                            <div class="vibe-desc">Mystical & creative</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectColor('blue')">
+                            <div class="vibe-emoji">🔵</div>
+                            <div class="vibe-label">Blue</div>
+                            <div class="vibe-desc">Calm & communicative</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectColor('red')">
+                            <div class="vibe-emoji">🔴</div>
+                            <div class="vibe-label">Red</div>
+                            <div class="vibe-desc">Passionate & energetic</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectColor('green')">
+                            <div class="vibe-emoji">🟢</div>
+                            <div class="vibe-label">Green</div>
+                            <div class="vibe-desc">Growth & harmony</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selected-color">
+                    
+                    <label>Choose your current digital companion:</label>
+                    <div class="vibe-selector">
+                        <div class="vibe-option" onclick="selectCompanion('airpods')">
+                            <div class="vibe-emoji">🎧</div>
+                            <div class="vibe-label">AirPods</div>
+                            <div class="vibe-desc">Soundtrack to your life</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectCompanion('phone')">
+                            <div class="vibe-emoji">📱</div>
+                            <div class="vibe-label">Smartphone</div>
+                            <div class="vibe-desc">Connection & content</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectCompanion('laptop')">
+                            <div class="vibe-emoji">💻</div>
+                            <div class="vibe-label">Laptop</div>
+                            <div class="vibe-desc">Creation & productivity</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectCompanion('book')">
+                            <div class="vibe-emoji">📚</div>
+                            <div class="vibe-label">Book</div>
+                            <div class="vibe-desc">Knowledge & escape</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selected-companion">
+                    
+                    <button class="btn" onclick="calculateCoreEnergy()">Reveal My Core Energy</button>
+                    <div class="error-message" id="classic-error"></div>
+                </div>
+            </div>
+
+            <!-- Mood Scan Tab -->
+            <div id="mood" class="tab-content">
+                <div class="method-card">
+                    <h3 class="method-title"><i class="fas fa-brain"></i> Mood Matrix Scan</h3>
+                    <p>Select all that apply to your current ~vibe state~</p>
+                    
+                    <div class="mood-grid">
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">😌</span> Chill
+                        </div>
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">🤪</span> Unhinged
+                        </div>
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">😔</span> Sad Boi Hours
+                        </div>
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">🔥</span> Hot Take Ready
+                        </div>
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">🧠</span> Overthinking
+                        </div>
+                        <div class="mood-option" onclick="toggleSelection(this)">
+                            <span class="emoji">💅</span> Slaying
+                        </div>
+                    </div>
+                    
+                    <label>How would you react to this meme?</label>
+                    <div class="vibe-selector">
+                        <div class="vibe-option" onclick="selectReaction('laugh')">
+                            <div class="vibe-emoji">😂</div>
+                            <div class="vibe-label">LOL</div>
+                            <div class="vibe-desc">Actually funny</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectReaction('cry')">
+                            <div class="vibe-emoji">😭</div>
+                            <div class="vibe-label">Too Real</div>
+                            <div class="vibe-desc">Why you calling me out</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectReaction('mindblown')">
+                            <div class="vibe-emoji">🤯</div>
+                            <div class="vibe-label">Mind Blown</div>
+                            <div class="vibe-desc">Deep thoughts activated</div>
+                        </div>
+                        <div class="vibe-option" onclick="selectReaction('meh')">
+                            <div class="vibe-emoji">😐</div>
+                            <div class="vibe-label">Meh</div>
+                            <div class="vibe-desc">Seen better</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selected-reaction">
+                    
+                    <button class="btn" onclick="calculateMoodAura()">Scan My Mood</button>
+                    <div class="error-message" id="mood-error"></div>
+                </div>
+            </div>
+
+            <!-- History Tab -->
+            <div id="history" class="tab-content">
+                <div class="method-card">
+                    <h3 class="method-title"><i class="fas fa-history"></i> Vibe History</h3>
+                    <p>Your previous aura readings ~for the memories~</p>
+                    
+                    <div id="history-list">
+                        <!-- History items will be added here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day Experience Tab -->
+            <div id="experience" class="tab-content">
+                <div class="method-card">
+                    <h3 class="method-title"><i class="fas fa-calendar-day"></i> Day Experience</h3>
+                    <p>Describe your day and we'll analyze your aura based on your experience</p>
+                    
+                    <textarea id="day-experience" placeholder="Share your aura experience..." rows="8"></textarea>
+                    
+                    <div class="time-input" style="margin-top: 1rem;">
+                        <select id="day-rating">
+                            <option value="" disabled selected>How was your day overall?</option>
+                            <option value="5">🌟 Amazing</option>
+                            <option value="4">👍 Good</option>
+                            <option value="3">😐 Neutral</option>
+                            <option value="2">👎 Tough</option>
+                            <option value="1">💀 Awful</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn" onclick="calculateAuraFromExperience()">
+                        <i class="fas fa-magic"></i> Analyze My Day
+                    </button>
+                    <div class="error-message" id="experience-error"></div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="result" class="result-container">
+                <h2 class="aura-name" id="result-name">Aura Name</h2>
+                <p class="aura-desc" id="result-desc">Aura description will appear here</p>
+                
+                <div class="aura-stats">
+                    <div class="stat">
+                        <div class="stat-label">Vibe Match</div>
+                        <div class="stat-value" id="stat-match">-</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Energy Level</div>
+                        <div class="stat-value" id="stat-energy">-</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Rarity</div>
+                        <div class="stat-value" id="stat-rarity">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Celebrities Page -->
+        <div id="celebrities" class="page-content">
+            <div class="method-card">
+                <h3 class="method-title"><i class="fas fa-star"></i> Aura Celebrities</h3>
+                <p>The most famous aura farmers and vibe curators from across social media</p>
+                
+                <div class="celebrity-grid">
+                    <!-- Rayyan Arkan Dikha -->
+                    <div class="celebrity-card">
+                        <div class="rank">#1 Aura Farmer</div>
+                        <div class="celebrity-name">Rayyan Arkan Dikha</div>
+                        <div class="celebrity-origin">Indonesia • Age 11</div>
+                        <div class="stats">
+                            <div class="stat-badge">
+                                <span class="stat-value">5.2M</span> followers
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-value">82M</span> views
+                            </div>
+                        </div>
+                        <div class="description">
+                            The original "Aura Farming Kid" who went viral for his energetic Pacu Jalur dance performances. His authentic aura energy has inspired millions worldwide.
+                        </div>
+                    </div>
+                    
+                    <!-- Aura Queen -->
+                    <div class="celebrity-card">
+                        <div class="rank">#2 Vibe Curator</div>
+                        <div class="celebrity-name">Lila "Aura Queen" Chen</div>
+                        <div class="celebrity-origin">Taiwan • Age 19</div>
+                        <div class="stats">
+                            <div class="stat-badge">
+                                <span class="stat-value">3.8M</span> followers
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-value">210M</span> views
+                            </div>
+                        </div>
+                        <div class="description">
+                            Known for her viral aura cleansing videos and "vibe check" challenges. Her content helps people cleanse negative energy and boost their aura.
+                        </div>
+                    </div>
+                    
+                    <!-- DJ Aura -->
+                    <div class="celebrity-card">
+                        <div class="rank">#3 Energy DJ</div>
+                        <div class="celebrity-name">DJ Aura</div>
+                        <div class="celebrity-origin">Brazil • Age 24</div>
+                        <div class="stats">
+                            <div class="stat-badge">
+                                <span class="stat-value">2.1M</span> followers
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-value">150M</span> views
+                            </div>
+                        </div>
+                        <div class="description">
+                            Creates music specifically designed to enhance your aura. His "Aura Boost" tracks are used in meditation and energy work worldwide.
+                        </div>
+                    </div>
+                    
+                    <!-- Aura Guru -->
+                    <div class="celebrity-card">
+                        <div class="rank">#4 Aura Scientist</div>
+                        <div class="celebrity-name">Dr. Aura Guru</div>
+                        <div class="celebrity-origin">India • Age 42</div>
+                        <div class="stats">
+                            <div class="stat-badge">
+                                <span class="stat-value">1.5M</span> followers
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-value">95M</span> views
+                            </div>
+                        </div>
+                        <div class="description">
+                            Blends ancient wisdom with modern science to explain aura energy. His TED talk on "The Physics of Auras" went viral.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>AuraCheck © 2025 • All vibes reserved</p>
+            <p>Created with 💜 and good energy</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
