@@ -72,7 +72,7 @@ For Software:
 Detailed workflow of the project
 
 # Additional Demos
-[[Demolinks](https://a-jith-u.github.io/useless_project_Aura/ )]
+[(https://a-jith-u.github.io/useless_project_Aura/ )](https://a-jith-u.github.io/useless_project_Aura/ )
 
 ## Team Contributions
 - Ajith Joy: Frontend development
