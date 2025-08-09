@@ -57,14 +57,12 @@ start index.html # Windows
 For Software:
 
 # Screenshots (Add at least 3)
-![1.png]
-*Add caption explaining what this shows*
+![Share your aura experiences.](1.png)
 
-![2.png](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Calculate your Aura scores](2.png)
 
-![3.png](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![View your Aura history](3.png)
+
 
 # Diagrams
 [User Starts] → [Answer Fun Questions] → [Aura Calculation] → [Get Results]
@@ -94,16 +92,6 @@ graphs show energy trends
 
 Shareable Stats:
 Generate tweet-ready results.
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
