@@ -18,11 +18,11 @@
 AuraCheck is a web app that analyzes user's emotional and energetic states through interactive quizzes, providing personalized aura scores and insights. It also features a gallery of famous aura influencers for inspiration.
 
 ### The Problem 
-It solves the urgent problem of not knowing if your aura is glowing or just buffering, while tracking how many auras you’ve lost or gained and showing your current vibe status.
+"Ever wonder if your vibe is sparkling or just stuck on loading? AuraCheck solves the mystery—tracking your energy highs and lows, showing whether you're radiating sunshine or running on low battery, all in one playful snapshot."
 
 
 ### The Solution
-"AuraChekmakes self-care fun with a game-like mood tracker. Earn points for positive actions (+50 for kindness) and lose points for stress (-30), unlocking playful aura personas like 'Sunbeam Superstar'. Get personalized tips to boost your energy through a colorful, rewarding interface that turns emotional growth into an adventure."
+AuraChekmakes self-care fun with a game-like mood tracker. Earn points for positive actions (+50 for kindness) and lose points for stress (-30), unlocking playful aura personas like 'Sunbeam Superstar'. Get personalized tips to boost your energy through a colorful, rewarding interface that turns emotional growth into an adventure.
 
 ## Technical Details
 ### Technologies/Components Used
