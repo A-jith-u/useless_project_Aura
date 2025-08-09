@@ -63,6 +63,8 @@ For Software:
 
 ![View your Aura history](3.png)
 
+# Diagrams
+![diagram](workflow_diagram.png)
 
 ### Project Demo
 # Video
