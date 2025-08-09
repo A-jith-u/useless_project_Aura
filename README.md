@@ -31,13 +31,7 @@ For Software:
   HTML5 (Structure)
   CSS3 (Styling with animations and gradients)
   JavaScript (Logic, interactivity)
-
-
-- Chart.js
-  Animate.css
-  Font Awesome 
-  Google Fonts 
-
+  
 - GitHub/Git
   VS Code
   Chrome DevTools 
