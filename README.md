@@ -56,7 +56,7 @@ start index.html # Windows
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots 
 ![Share your aura experiences.](1.png)
 
 ![Calculate your Aura scores](2.png)
@@ -68,11 +68,11 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[video_screenrecord.mp4]
+Detailed workflow of the project
 
 # Additional Demos
-[Add any extra demo materials/links]
+[[Demolinks](https://a-jith-u.github.io/useless_project_Aura/ )]
 
 ## Team Contributions
 - Ajith Joy: Frontend development
