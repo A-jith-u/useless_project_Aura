@@ -15,7 +15,7 @@
 
 ### Project Description
 
-This project is a web-based Aura Calculator that lets users record daily aura-related activities, track their total aura score, and visualize results through interactive charts.
+This project is a web-based Aura Calculator that lets users record daily aura-related activities, track their total aura score, and visualize results.
 
 ### The Problem (that doesn't exist)
 It solves the urgent problem of not knowing if your aura is glowing or just buffering, while tracking how many auras you’ve lost or gained and showing your current vibe status.
