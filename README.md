@@ -57,41 +57,12 @@ start index.html # Windows
 For Software:
 
 # Screenshots (Add at least 3)
-![Share your aura experiences.](1.png)
+![Share your aura experiences.] (1.png)
 
-![Calculate your Aura scores](2.png)
+![Calculate your Aura scores] (2.png)
 
-![View your Aura history](3.png)
+![View your Aura history] (3.png)
 
-
-# Diagrams
-[User Starts] → [Answer Fun Questions] → [Aura Calculation] → [Get Results]
-       ↑               ↑                        ↑
-[LocalStorage]  [Point System]          [Celebrity Comparison]
-
-1. User Interaction Phase
-Playful Questionnaires:
-Users answer quick, fun questions like:
-"Did you:
-✓ Pet a dog today? (+50)
-✗ Forget to hydrate? (-20)"
-
-Activity Logging:
-Track daily wins/fails with simple checkboxes.
-
-2. Data Processing Phase
-Point Calculation
-Time Adjustment
-Celebrity Benchmarking:
-Compare scores to viral aura stars.
-
-3. Results Generation
-Aura Classification:
-Visual Dashboard:
-graphs show energy trends
-
-Shareable Stats:
-Generate tweet-ready results.
 
 ### Project Demo
 # Video
