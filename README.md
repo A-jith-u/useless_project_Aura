@@ -15,15 +15,14 @@
 
 ### Project Description
 
-This project is a web-based Aura Calculator that lets users record daily aura-related activities, track their total aura score, and visualize results.
+AuraCheck is a web app that analyzes user's emotional and energetic states through interactive quizzes, providing personalized aura scores and insights. It also features a gallery of famous aura influencers for inspiration.
 
 ### The Problem 
 It solves the urgent problem of not knowing if your aura is glowing or just buffering, while tracking how many auras you’ve lost or gained and showing your current vibe status.
 
 
 ### The Solution
-This project makes aura tracking fun and easy! Just answer quick, playful questions about your day ("Did you help someone?" +50 points, "Argue with a coworker?" -30 points). The more experiences you log, the smarter it gets—comparing your vibes against others and even celebrity aura champs. Get instant results like "Sunshine Superstar" or "Needs More Coffee," with tips to boost your energy. It's like a game that actually improves your mood.
-
+"AuraChekmakes self-care fun with a game-like mood tracker. Earn points for positive actions (+50 for kindness) and lose points for stress (-30), unlocking playful aura personas like 'Sunbeam Superstar'. Get personalized tips to boost your energy through a colorful, rewarding interface that turns emotional growth into an adventure."
 
 ## Technical Details
 ### Technologies/Components Used
