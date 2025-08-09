@@ -57,11 +57,11 @@ start index.html # Windows
 For Software:
 
 # Screenshots (Add at least 3)
-![Share your aura experiences.] (1.png)
+![Share your aura experiences.](1.png)
 
-![Calculate your Aura scores] (2.png)
+![Calculate your Aura scores](2.png)
 
-![View your Aura history] (3.png)
+![View your Aura history](3.png)
 
 
 ### Project Demo
