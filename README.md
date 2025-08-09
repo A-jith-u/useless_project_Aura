@@ -62,7 +62,7 @@ For Software:
 
 ### Project Demo
 # Video
-[[video_screenrecord.mp4](https://drive.google.com/drive/u/0/folders/1MrZlPFifbrfPWTanDeWiIxysOMMexlZY)]]
+[[video_screenrecord.mp4](https://drive.google.com/file/d/1vf5flN9fXtZEC5o7VyhDKIJAUUaGFIun/view?usp=drive_link)]]
 Detailed workflow of the project
 
 # Additional Demos
